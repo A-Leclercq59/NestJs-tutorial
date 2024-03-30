@@ -38,7 +38,7 @@ export class UsersService {
     },
   ];
 
-  findAll(role?: 'INTERNS' | 'ENGINEER' | 'ADMIN') {
+  findAll(role?: 'INTERN' | 'ENGINEER' | 'ADMIN') {
     if (role) {
       const rolesArray = this.users.filter((user) => user.role === role);
 

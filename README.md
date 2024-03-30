@@ -53,4 +53,7 @@ $ nest g controller users
 # create a new service for the module users
 $ nest g service users
 
+# create a new resource
+$ nest g resource users
+
 ```

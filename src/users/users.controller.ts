@@ -20,7 +20,7 @@ export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
   @Get() // GET /users or /users?role=value
-  findAll(@Query('role') role?: 'INTERNS' | 'ENGINEER' | 'ADMIN') {
+  findAll(@Query('role') role?: 'INTERN' | 'ENGINEER' | 'ADMIN') {
     return this.usersService.findAll(role);
   }
 
